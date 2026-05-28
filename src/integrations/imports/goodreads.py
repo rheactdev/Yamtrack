@@ -185,6 +185,7 @@ class GoodReadsImporter:
             "read": Status.COMPLETED,
             "currently-reading": Status.IN_PROGRESS,
             "to-read": Status.PLANNING,
+            "did-not-finish": Status.DROPPED,
         }
 
         return status_mapping[row["Exclusive Shelf"]].value
